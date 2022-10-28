@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <select id="select_box" onchange="changeLang()">
+        <option value="select" id="select">選択してください</option>
+        <option value="selected_jpn" id="jpn">日本語</option>
+        <option value="selected_en" id="en">English</option>
+        <option value="selected_all" id="all">全て表示</option>
+    </select>
+    <table>
+        <tr id="tr-jpn">
+            <th>日本</th>
+            <td>こんにちは</td>
+            <td>ありがとう</td>
+            <td>さようなら</td>
+        </tr>
+        <tr id="tr-en">
+            <th>English</th>
+            <td>Hello</td>
+            <td>Thank you</td>
+            <td>Good Bye</td>
+        </tr>
+    </table>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -6,8 +6,8 @@ function furuitsValue($unit, $quantity) {
   return $price;
 }
 
-
 $i = 0;
+
 foreach($fruitsPrice as $key => $value) {
   $total = furuitsValue($value, $fruitsPiece[$i]);
   echo $key."は".$total."円です";
