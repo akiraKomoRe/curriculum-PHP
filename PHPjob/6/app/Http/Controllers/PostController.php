@@ -25,4 +25,17 @@ class PostController extends Controller
 
         return redirect('post');
     }
+    public function index()
+    {
+        $user = User::all();
+        $post = Post::orderBy('created_at', 'desc')->get();
+        return view('post',['posts' => $post, 'users' => $user]);
+    }
+    public function delete(Request $request)
+    {
+        $post = Post::find($request->id);
+        $post->delete();
+
+        return redirect('post');
+    }
 }

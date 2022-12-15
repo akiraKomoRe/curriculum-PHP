@@ -20,3 +20,7 @@ Route::post('post', 'PostController@create');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('post', 'PostController@index');
+
+Route::get('post/delete', 'PostController@delete');
